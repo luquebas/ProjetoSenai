@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    background-color: #081b29;
+    margin-bottom: 80px;
+}
+
+#fundamentals {
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-right: 200px;
+}
+
+.optionsNav {
+    margin-right: 80px;
+}
+
+
+.optionsNav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 300;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.optionsNav a:hover {
+    color: #00abf0
+}
+
+.introducao {
+    height: 100vh;
+    background: url(../img/nuvem.png) no-repeat;
+    background-position: right;
+    background-size: 50vw 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.intCont {
+    max-width: 600px;
+}
+
+.intCont h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.intCont p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.btns a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    background: #00abf0;
+    color: #081b29;
+    border: 2px solid #00abf0;
+    border-radius: 10px 10px 0px 10px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btns a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btns a:hover::before {
+    width: 100%;
+}
+
+.btns a:hover {
+    color: #00abf0;
+}
+
+.nuvem {
+    width: 80px;
+    height: 60px;
+}

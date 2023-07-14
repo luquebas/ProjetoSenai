@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    color: black;
+    height: 100vh;
+    background-color: #081b29;
+} 
+
+header {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    background-color: #081b29;
+}
+
+#fundamentals {
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.optionsNav {
+    margin-right: 80px;
+}
+
+
+.optionsNav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 300;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.optionsNav a:hover {
+    color: #00abf0
+}
+
+/* container do texto centralizado 'confira nosso curso' */
+.principios-curso {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+/* título centralizado: 'Microsoft Azure-900' */
+.principios-curso h1 {
+    font-weight: 400;
+    font-size: 26pt;
+    background-color: #ededed;
+    /* cor de background-linear-gradiente */
+  
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+    filter: contrast(135%); /* contraste para deixar cor a visualização mais forte */
+}
+
+/* modais */
+dialog {
+    margin-top:170px;
+    width: 30%;
+    height: 60%;
+    border-radius:12px;
+    /* barra de rolagem para o firefox */
+    /* scrollbar-width:thin;        "auto" or "thin" */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(10, 70, 113) rgba(0, 0, 0, 0.211);  /* scroll thumb and track */
+    scrollbar-arrow-color: #fff; /* setinha da barra de rolagem */
+    scrollbar-face-color: aliceblue;
+    scrollbar-track-color: blueviolet;
+    scrollbar-darkshadow-color: blue;
+    box-shadow: inset 0px 0px 12px 2px black;
+    scrollbar-base-color:blueviolet; 
+    /* retirar as setinhas da barra de rolagem */
+    outline: none;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.556);
+}
+
+/* barra de rolagem para o chrome e edge */
+        dialog::-webkit-scrollbar { 
+            width: 12px;               /* width of the entire scrollbar */
+        }
+          
+          dialog::-webkit-scrollbar-track { 
+            background: rgba(0, 0, 0, 0.468);        /* color of the tracking area */
+          }
+          
+          dialog::-webkit-scrollbar-thumb { 
+            background-color: rgba(10, 70, 113, 0.578);    /* color of the scroll thumb */
+            border-radius: 20px;       /* roundness of the scroll thumb */
+            border: 3px solid rgba(0, 0, 0, 0.211);  /* creates padding around scroll thumb */
+         
+}
+.container-elements {
+    margin-left: 165px;
+    width: 90%
+}
+.icon-azure {
+    /* definindo tamanhos da imagem */
+    width: 20vw;  /* esse o width faz com que a imagem fique dentro do elemento sem ser distorcida após o zoom */
+    height: 28vh;
+    padding: 44px;
+    mix-blend-mode: darken;
+}
+/* modificar as imagem de dentro do modal; class geral */
+.icon-azure-modal {
+    width:50%;
+    height: 30%;
+}
+/* container da imagem */
+.button_abrir_modal {
+    border-radius: 14px;
+    margin: 12px;
+    background: linear-gradient(0deg, #dbdbdb 0%, #93ace2c7 100%);
+    border: 4px outset rgba(0, 255, 255, 0.295);
+    outline: none;
+
+    /* Animação */
+    animation: pulseBorder 4s infinite; /* Inicia a animação pulseBorder com duração de 2 segundos, repetição infinita */
+}
+
+@keyframes pulseBorder {
+    0% {
+        border-color: rgb(0, 0, 0); /* Define a cor inicial da borda */
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0); /* Define a cor intermediária da borda */
+    }
+    100% {
+        border-color: rgb(0, 0, 0); /* Define a cor inicial da borda */
+    }
+}
+
+.button_abrir_modal:hover {
+    background-color: #00b7ff;
+    cursor: pointer;
+}
+
+.figcaption{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 18px;
+}
+/* estilização do botão de fechar (está dentro do modal) */
+.button_fechar_modal {
+    width: 18%;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color:#fff ;
+    border: 1px solid #fff;
+    margin: 5px;
+}
+/* hover aplicado no modal de fechar */
+.button_fechar_modal:hover {
+    background-color: rgb(83, 8, 154);
+    cursor: pointer;
+}
+/* configurando o icon da azure que está dentro do modal */
+/* .icon-azure-modal {
+} */
+/* configurando, de forma geral, os elementos dentro do modal */
+.modal-interno {
+    border: none;
+    background-color: transparent; /* transparente senão iria ficar um bg branco sobreposto ao bg do dialog */
+}
+/* todo texto introduzido dentro do modal */
+.modal-interno p {
+    margin: 5px;
+    text-align: justify; /* o texto ficará justificado; palavras alinhadas com a margem */
+}
+.container-button_fechar_modal {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Az-900</title>
+    <link rel="stylesheet" src="style.css" href="../css/content.css">
+</head>
+<body>
+    <header class='header'>
+        <a href="index.html" id="logo">
+            <img id="fundamentals" src="../img/fundamentals.png">
+        </a>
+    
+        <nav class="optionsNav">
+            <a href="index.html">Home</a>
+            <a href="../html/content.html">Conteúdo</a>
+        </nav>
+    </header>
+    <section class="principios-curso">
+<h1>Conteúdo</h1>
+</section>
+<div class="container-elements">
+<button type="button" class="button_abrir_modal">
+    <div class="figcaption"><figcaption>Nuvem pública</figcaption></div>   
+    <img src="../img/nuvemPub.jpeg" alt="icon azure" class="icon-azure">
+</button>
+
+<dialog class="modal">
+    <!-- conteúdo -->
+    <button type="button" class="modal-interno">
+        <img src="../img/nuvemPub.jpeg" alt="icon azure" class="icon-azure-modal" id="nuvem-publica">
+        <h2>Nuvem pública</h2>
+        <p>A nuvem pública é definida como uma série de serviços de computação oferecidos por terceiros à Internet pública, os quais são disponibilizados a qualquer pessoa que queira utilizá-los ou comprá-los. Eles podem ser gratuitos ou vendidos sob demanda, permitindo que os clientes paguem apenas pelo seu consumo de ciclos de CPU, armazenamento ou largura de banda.
+<br>
+            Ao contrário das nuvens privadas, as nuvens públicas podem poupar as empresas dos enormes gastos de compra, gerenciamento e manutenção e hardware local e infraestrutura de aplicativo. No caso da nuvem pública, o provedor de serviços de nuvem é responsável por todo o gerenciamento e manutenção do sistema. As nuvens públicas também podem ser implantadas mais rápido do que infraestruturas locais, e com uma plataforma quase infinitamente escalonável. Todos os funcionários de uma empresa podem utilizar o mesmo aplicativo de um escritório ou filial usando o dispositivo de sua escolha, contanto que tenham acesso à Internet. Embora algumas questões sobre segurança tenham sido levantadas em relação aos ambientes de nuvem pública, quando implantada corretamente, a nuvem pública pode ser tão segura quanto a nuvem privada, e com gerenciamento altamente eficaz, caso o provedor utilize métodos adequados de segurança, como IDPS (sistemas de prevenção e detecção de invasão).<br><br>
+            <!-- fonte do texto acima -->
+            Fonte: <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/">https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/</a>
+        </p>
+    </button>
+    <div class="container-button_fechar_modal">
+        <button class="button_fechar_modal">Fechar</button>
+    </div>
+</dialog>
+
+<!-- second modal -->
+<button type="button" class="button_abrir_modal">
+    <div class="figcaption"><figcaption>Nuvem privada</figcaption></div>   
+    <img src="../img/nuvemPriv.jpeg" alt="icon azure" class="icon-azure">
+</button>
+
+<dialog class="modal">
+    <!-- conteúdo -->
+    <button type="button" class="modal-interno">
+        <div class="modal-h2">
+        <img src="../img/nuvemPriv.jpeg" alt="icon azure" class="icon-azure-modal" id="nuvem-privada">
+        </div><h2>Nuvem privada</h2>
+        <p>Nuvem privada refere-se aos serviços de computação em nuvem oferecidos pela Internet ou por uma rede interna privada somente a usuários selecionados e não ao público geral. Também chamada de nuvem interna ou corporativa, a computação em nuvem privada proporciona às empresas muitos dos benefícios de uma nuvem pública , incluindo autoatendimento, escalabilidade e elasticidade, com customização e controle adicional disponíveis de recursos dedicados em uma infraestrutura de computação hospedada localmente. Além disso, as nuvens privadas oferecem um maior nível de segurança e privacidade por meio de firewalls da empresa e hospedagem interna, a fim de garantir que as operações e dados confidenciais não possam ser acessados por terceiros. Uma desvantagem é que o departamento de TI da empresa é responsável pelo custo e prestação de contas do gerenciamento da nuvem privada. Sendo assim, as nuvens privadas exigem as mesmas despesas de alocação de pessoal, gerenciamento e manutenção que um datacenter comum de propriedade da empresa.
+<br>
+            Dois modelos de serviços de nuvem podem ser utilizados em uma nuvem privada. O primeiro é a IaaS (infraestrutura como serviço) , que permite que a empresa use recursos de infraestrutura, como computação, rede e armazenamento como serviço. O segundo é a PaaS (plataforma como serviço) , que permite que a empresa faça de tudo, desde aplicativos simples baseados em nuvem até aplicativos empresariais sofisticados. As nuvens privadas também podem ser combinadas com nuvens públicas para criar uma nuvem híbrida, permitindo que as empresas usufruam da intermitência de nuvem para liberar mais espaço e dimensionar serviços de computação para nuvem pública mediante aumento da demanda de computação.
+            <br><br>
+                <!-- fonte do texto acima -->
+                Fonte: <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/">https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-private-cloud/</a>
+            </p>
+    </button>
+<div class="container-button_fechar_modal">
+    <button class="button_fechar_modal">Fechar</button>
+</div>
+</dialog>
+
+<!-- third modal -->
+<button type="button" class="button_abrir_modal">
+    <div class="figcaption"><figcaption>Nuvem híbrida</figcaption></div>   
+    <img src="../img/nuvemHib.jpeg" alt="icon azure" class="icon-azure">
+</button>
+
+<dialog class="modal">
+    <!-- conteúdo -->
+    <button type="button" class="modal-interno">
+        <img src="../img/nuvemHib.jpeg" alt="icon azure" class="icon-azure-modal">
+        <h2>Nuvem híbrida</h2>
+        <p>Uma nuvem híbrida—às vezes chamada de nuvem híbrida—é um ambiente de computação que combina um datacenter local (também chamado de nuvem privada) com uma nuvem pública , permitindo que dados e aplicativos sejam compartilhados entre eles. Algumas pessoas definem a infraestrutura de nuvem híbrida para incluir configurações "multicloud" em que uma organização usa mais de uma nuvem pública além de seu datacenter local.
+            <br><br>
+            <!-- fonte do texto acima -->
+            Fonte: <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/">https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-hybrid-cloud-computing/</a>
+        </p>
+    </button>
+    <div class="container-button_fechar_modal">
+        <button class="button_fechar_modal">Fechar</button>
+    </div>
+</dialog>
+
+<!-- fourth modal -->
+<button type="button" class="button_abrir_modal">
+    <div class="figcaption"><figcaption>IaaS</figcaption></div>   
+    <img src="../img/iaas.jpeg" alt="icon azure" class="icon-azure">
+</button>
+
+<dialog class="modal">
+    <!-- conteúdo -->
+    <button type="button" class="modal-interno">
+        <img src="../img/iaas.jpeg" alt="icon azure" class="icon-azure-modal">
+        <h2>IaaS</h2>
+        <p>A IaaS (infraestrutura como serviço) é um tipo de serviço de computação em nuvem que oferece recursos fundamentais de computação, armazenamento e rede sob demanda e pagos conforme o uso. A IaaS é um dos quatro tipos de serviços de nuvem, juntamente com o SaaS (software como serviço), a PaaS (plataforma como serviço) e a tecnologia  sem servidor.
+<br>
+            A migração da infraestrutura da organização para uma solução de IaaS ajuda a reduzir a manutenção dos datacenters locais, economizar em custos de hardware e adquirir informações sobre os negócios em tempo real. As soluções de IaaS oferecem flexibilidade para escalar e reduzir os recursos de TI verticalmente conforme a demanda. Elas também ajudam a provisionar rapidamente novos aplicativos e a aumentar a confiabilidade da infraestrutura subjacente.
+            <br>
+            Com a IaaS, você não precisa arcar com o custo e a complexidade de comprar e gerenciar os servidores físicos e a infraestrutura do datacenter. Cada recurso é oferecido como um componente de serviço separado e você só paga por um recurso específico durante o tempo em que precisa dele. Um provedor de serviços de computação em nuvem , como o Azure , gerencia a infraestrutura, enquanto você compra, instala, configura e gerencia seus produtos de software, incluindo os sistemas operacionais, o middleware e os aplicativos.
+            <br><br>
+            <!-- fonte do texto acima -->
+            Fonte: <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/">https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-iaas/</a>
+        </p>
+    </button>
+
+    <div class="container-button_fechar_modal">
+        <button class="button_fechar_modal">Fechar</button>
+    </div>
+</dialog>
+
+<!-- fifth modal -->
+<button type="button" class="button_abrir_modal">
+    <div class="figcaption"><figcaption>PaaS</figcaption></div>   
+    <img src="../img/paas.jpeg" alt="icon azure" class="icon-azure">
+</button>
+
+<dialog class="modal">
+    <!-- conteúdo -->
+    <button type="button" class="modal-interno">
+        <img src="../img/paas.jpeg" alt="icon azure" class="icon-azure-modal">
+        <h2>PaaS</h2>
+        <p>O PaaS (plataforma como serviço) é um ambiente de desenvolvimento e implantação completo na nuvem, com recursos que permitem a você fornecer tudo, desde aplicativos simples baseados em nuvem até sofisticados aplicativos empresariais habilitados para a nuvem. Você adquire os recursos necessários por meio de um provedor de serviços de nuvem com pagamento conforme o uso e os acessa por uma conexão com a Internet segura.
+<br>
+            Assim como IaaS, PaaS inclui infraestrutura, servidores, armazenamento e rede, além de middleware, ferramentas de desenvolvimento, serviços de BI (business intelligence), sistemas de gerenciamento de banco de dados e muito mais. O PaaS é criado para dar suporte ao ciclo de vida do aplicativo Web completo: compilação, teste, implantação, gerenciamento e atualização.
+            <br>
+            O PaaS permite a você evitar os gastos e a complexidade de comprar e gerenciar licenças de software, infraestrutura e middleware de aplicativo subjacente, orquestrador de contêineres como Kubernetes ou ferramentas de desenvolvimento e outros recursos. Você gerencia os aplicativos e serviços que desenvolve, e o provedor de serviços de nuvem normalmente gerencia o resto.
+            <br><br>
+            <!-- fonte do texto acima -->
+            Fonte: <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/">https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-paas/</a>
+        </p>
+    </button>
+
+    <div class="container-button_fechar_modal">
+        <button class="button_fechar_modal">Fechar</button>
+    </div>
+</dialog>
+
+<!-- sixth modal -->
+<button type="button" class="button_abrir_modal">
+    <div class="figcaption"><figcaption>SaaS</figcaption></div>   
+    <img src="../img/saas.jpeg" alt="icon azure" class="icon-azure">
+</button>
+
+<dialog class="modal">
+    <!-- conteúdo -->
+    <button type="button" class="modal-interno">
+        <img src="../img/saas.jpeg" alt="icon azure" class="icon-azure-modal">
+        <h2>SaaS</h2>
+        <p>O SaaS (Software como Serviço) permite aos usuários se conectar e usar aplicativos baseados em nuvem pela Internet. Exemplos comuns são email, calendário e ferramentas do Office (como Microsoft Office 365).
+<br>
+            O SaaS fornece uma solução de software completa que você pode comprar em uma base paga conforme o uso por um  provedor de serviço de nuvem. Você pode alugar o uso de aplicativo para sua organização e seus usuários se conectarem a ele pela Internet, normalmente por um navegador da Web. Toda a infraestrutura subjacente, middleware, software de aplicativo e dados de aplicativo ficam no datacenter do provedor de serviços. O provedor de serviço gerencia hardware e software e, com o contrato de serviço apropriado, garante a disponibilidade e a segurança do aplicativo e de seus dados. O SaaS permite que sua organização entre em funcionamento rapidamente com um aplicativo por custo inicial mínimo.
+            <br><br>
+            <!-- fonte do texto acima -->
+            Fonte: <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-a-public-cloud/">https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-saas/</a>
+        </p>
+    </button>
+
+    <div class="container-button_fechar_modal">
+        <button class="button_fechar_modal">Fechar</button>
+    </div>
+</dialog>
+
+</div> 
+</div>
+
+<!-- div do container-elements -->
+    <script src="../js/content.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+</body>
+
+</html>
